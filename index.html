@@ -27,13 +27,9 @@ body {
 }
 
 body {
-
     font-family: "Comic Sans MS", "Trebuchet MS", cursive;
-
     overflow: hidden;
-
     background: #ffdce9;
-
     color: #ff477e;
 }
 
@@ -43,12 +39,9 @@ body {
 ===================================================== */
 
 .slide {
-
     position: absolute;
-
     width: 100%;
     height: 100%;
-
     top: 0;
     left: 0;
 
@@ -60,14 +53,11 @@ body {
     text-align: center;
 
     padding: 20px;
-
     overflow: hidden;
 }
 
 .slide.active {
-
     display: flex;
-
     animation: slideIn 0.8s ease;
 }
 
@@ -90,20 +80,15 @@ body {
 ===================================================== */
 
 .content {
-
     position: relative;
-
     z-index: 20;
 
     width: min(900px, 95%);
-
     max-height: 95vh;
 }
 
 h1 {
-
     font-size: clamp(38px, 7vw, 72px);
-
     margin: 10px 0;
 
     color: #ff3f78;
@@ -114,20 +99,14 @@ h1 {
 }
 
 h2 {
-
     font-size: clamp(28px, 5vw, 48px);
-
     margin: 10px 0;
-
     color: #ff477e;
 }
 
 p {
-
     font-size: clamp(18px, 3vw, 28px);
-
     line-height: 1.5;
-
     color: #815968;
 }
 
@@ -146,11 +125,12 @@ p {
 
     border-radius: 50px;
 
-    background: linear-gradient(
-        135deg,
-        #ff4f81,
-        #ff79a0
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f81,
+            #ff79a0
+        );
 
     color: white;
 
@@ -181,7 +161,6 @@ p {
 }
 
 .next-btn:active {
-
     transform: scale(0.95);
 }
 
@@ -200,7 +179,8 @@ p {
 
     pointer-events: none;
 
-    animation: heartFloat linear forwards;
+    animation:
+        heartFloat linear forwards;
 }
 
 @keyframes heartFloat {
@@ -260,7 +240,8 @@ p {
 
     background: #efb7a9;
 
-    border-radius: 50% 50% 0 0;
+    border-radius:
+        50% 50% 0 0;
 }
 
 .star {
@@ -269,7 +250,8 @@ p {
 
     font-size: 25px;
 
-    animation: twinkle 2s infinite alternate;
+    animation:
+        twinkle 2s infinite alternate;
 }
 
 @keyframes twinkle {
@@ -295,11 +277,13 @@ p {
     position: relative;
 
     width: 170px;
-
     height: 250px;
 
     margin: 20px auto;
 }
+
+
+/* EARS */
 
 .teddy .ear {
 
@@ -343,6 +327,8 @@ p {
 }
 
 
+/* HEAD */
+
 .teddy .head {
 
     position: absolute;
@@ -360,6 +346,8 @@ p {
     z-index: 3;
 }
 
+
+/* EYES */
 
 .teddy .eye {
 
@@ -383,6 +371,8 @@ p {
     right: 37px;
 }
 
+
+/* SNOUT */
 
 .teddy .snout {
 
@@ -421,7 +411,8 @@ p {
     width: 25px;
     height: 13px;
 
-    border-bottom: 3px solid #4a2924;
+    border-bottom:
+        3px solid #4a2924;
 
     border-radius: 50%;
 
@@ -429,6 +420,8 @@ p {
     top: 18px;
 }
 
+
+/* BODY */
 
 .teddy .body {
 
@@ -463,6 +456,8 @@ p {
 }
 
 
+/* ARMS */
+
 .teddy .arm {
 
     position: absolute;
@@ -483,14 +478,16 @@ p {
 
     left: -18px;
 
-    transform: rotate(-25deg);
+    transform:
+        rotate(-25deg);
 }
 
 .teddy .arm.right {
 
     right: -18px;
 
-    transform: rotate(25deg);
+    transform:
+        rotate(25deg);
 }
 
 
@@ -504,17 +501,22 @@ p {
 
     display: inline-block;
 
-    animation: chocolateBounce 1.5s infinite;
+    animation:
+        chocolateBounce 1.5s infinite;
 }
 
 @keyframes chocolateBounce {
 
     0%,100% {
-        transform: translateY(0) rotate(-3deg);
+        transform:
+            translateY(0)
+            rotate(-3deg);
     }
 
     50% {
-        transform: translateY(-12px) rotate(3deg);
+        transform:
+            translateY(-12px)
+            rotate(3deg);
     }
 }
 
@@ -537,7 +539,8 @@ p {
 
     font-size: 100px;
 
-    animation: giftBounce 1.5s infinite;
+    animation:
+        giftBounce 1.5s infinite;
 }
 
 @keyframes giftBounce {
@@ -547,7 +550,9 @@ p {
     }
 
     50% {
-        transform: scale(1.12) rotate(3deg);
+        transform:
+            scale(1.12)
+            rotate(3deg);
     }
 }
 
@@ -570,6 +575,8 @@ p {
 }
 
 
+/* MOON */
+
 .moon {
 
     position: absolute;
@@ -589,6 +596,8 @@ p {
         rgba(255, 242, 189, 0.4);
 }
 
+
+/* WINDOW */
 
 .window {
 
@@ -614,6 +623,8 @@ p {
 }
 
 
+/* RAIN */
+
 .rain {
 
     position: absolute;
@@ -630,7 +641,9 @@ p {
 @keyframes rainFall {
 
     from {
-        transform: translateY(-50px);
+        transform:
+            translateY(-50px);
+
         opacity: 0;
     }
 
@@ -639,11 +652,16 @@ p {
     }
 
     to {
-        transform: translateY(200px);
+
+        transform:
+            translateY(200px);
+
         opacity: 0;
     }
 }
 
+
+/* AC */
 
 .ac {
 
@@ -661,12 +679,14 @@ p {
     border-radius: 10px;
 
     box-shadow:
-        0 5px 20px rgba(0,0,0,0.3);
+        0 5px 20px
+        rgba(0,0,0,0.3);
 }
 
 .ac::after {
 
-    content: "❄️  ❄️  ❄️";
+    content:
+        "❄️  ❄️  ❄️";
 
     position: absolute;
 
@@ -676,6 +696,8 @@ p {
     font-size: 16px;
 }
 
+
+/* COLD AIR */
 
 .cold {
 
@@ -689,19 +711,26 @@ p {
 
     font-size: 25px;
 
-    animation: coldAir 2s infinite;
+    animation:
+        coldAir 2s infinite;
 }
 
 @keyframes coldAir {
 
     0%,100% {
+
         opacity: 0.2;
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
     }
 
     50% {
+
         opacity: 1;
-        transform: translateY(10px);
+
+        transform:
+            translateY(10px);
     }
 }
 
@@ -718,9 +747,11 @@ p {
 
     left: 50%;
 
-    transform: translateX(-50%);
+    transform:
+        translateX(-50%);
 
-    width: min(700px, 90%);
+    width:
+        min(700px, 90%);
 
     height: 180px;
 
@@ -763,15 +794,18 @@ p {
 
     left: 12%;
 
-    transform: rotate(-5deg);
+    transform:
+        rotate(-5deg);
 }
 
 .pillow.two {
 
     left: auto;
+
     right: 12%;
 
-    transform: rotate(5deg);
+    transform:
+        rotate(5deg);
 }
 
 
@@ -790,11 +824,14 @@ p {
     width: 300px;
     height: 180px;
 
-    transform: translateX(-50%);
+    transform:
+        translateX(-50%);
 
     z-index: 15;
 }
 
+
+/* HEADS */
 
 .cuddle-head {
 
@@ -821,6 +858,8 @@ p {
 }
 
 
+/* EARS */
+
 .cuddle-head::before,
 .cuddle-head::after {
 
@@ -846,6 +885,8 @@ p {
     right: -3px;
 }
 
+
+/* FACE */
 
 .face-eye {
 
@@ -899,6 +940,8 @@ p {
 }
 
 
+/* BODIES */
+
 .cuddle-body {
 
     position: absolute;
@@ -923,6 +966,8 @@ p {
     right: 35px;
 }
 
+
+/* BLANKET */
 
 .blanket {
 
@@ -957,14 +1002,18 @@ p {
 @keyframes blanketMove {
 
     0%,100% {
-        transform: translateY(0);
+        transform:
+            translateY(0);
     }
 
     50% {
-        transform: translateY(-3px);
+        transform:
+            translateY(-3px);
     }
 }
 
+
+/* CUDDLE ARMS */
 
 .cuddle-arm {
 
@@ -985,7 +1034,8 @@ p {
     left: 95px;
     top: 90px;
 
-    transform: rotate(15deg);
+    transform:
+        rotate(15deg);
 }
 
 .cuddle-arm.two {
@@ -993,12 +1043,13 @@ p {
     right: 95px;
     top: 100px;
 
-    transform: rotate(-15deg);
+    transform:
+        rotate(-15deg);
 }
 
 
 /* =====================================================
-   SLIDE 4
+   SLIDE 4 — HUG
 ===================================================== */
 
 .slide4 {
@@ -1027,7 +1078,8 @@ p {
     }
 
     50% {
-        transform: scale(1.15);
+        transform:
+            scale(1.15);
     }
 }
 
@@ -1068,12 +1120,14 @@ p {
 @keyframes roseAppear {
 
     from {
+
         transform:
             rotate(-8deg)
             translateY(0);
     }
 
     to {
+
         transform:
             rotate(8deg)
             translateY(-12px);
@@ -1082,7 +1136,7 @@ p {
 
 
 /* =====================================================
-   SLIDE 6
+   SLIDE 6 — FINAL
 ===================================================== */
 
 .slide6 {
@@ -1106,14 +1160,18 @@ p {
 @keyframes finalHeart {
 
     0%,100% {
-        transform: scale(1);
+        transform:
+            scale(1);
     }
 
     50% {
-        transform: scale(1.2);
+        transform:
+            scale(1.2);
     }
 }
 
+
+/* YES BUTTON */
 
 .yes-button {
 
@@ -1147,7 +1205,8 @@ p {
 
 .yes-button:hover {
 
-    transform: scale(1.1);
+    transform:
+        scale(1.1);
 }
 
 
@@ -1166,13 +1225,19 @@ p {
 @keyframes finalAppear {
 
     from {
+
         opacity: 0;
-        transform: scale(0.5);
+
+        transform:
+            scale(0.5);
     }
 
     to {
+
         opacity: 1;
-        transform: scale(1);
+
+        transform:
+            scale(1);
     }
 }
 
@@ -1221,11 +1286,8 @@ p {
     }
 
     .blanket {
-        transform: scale(0.9);
-    }
-
-    .message {
-        font-size: 18px;
+        transform:
+            scale(0.9);
     }
 
 }
@@ -1239,35 +1301,57 @@ p {
 
 
 <!-- =====================================================
-     SLIDE 1 — SORRY + CHOCOLATE
+     SLIDE 1
 ===================================================== -->
 
 <section class="slide slide1 active">
 
     <div class="room-floor"></div>
 
-    <div class="star" style="top:10%;left:15%;">
+
+    <div
+        class="star"
+        style="top:10%;left:15%;">
+
         ✨
+
     </div>
 
-    <div class="star" style="top:20%;right:25%;">
+
+    <div
+        class="star"
+        style="top:20%;right:25%;">
+
         💗
+
     </div>
 
-    <div class="star" style="top:35%;left:7%;">
+
+    <div
+        class="star"
+        style="top:35%;left:7%;">
+
         ✨
+
     </div>
 
-    <div class="star" style="top:15%;right:7%;">
+
+    <div
+        class="star"
+        style="top:15%;right:7%;">
+
         💕
+
     </div>
 
 
     <div class="content">
 
+
         <h1>
             Sorryyy Jaanu 🥺❤️
         </h1>
+
 
         <p>
             I know I was being stupid 👉👈
@@ -1276,13 +1360,19 @@ p {
 
         <div class="teddy">
 
+
             <div class="ear left"></div>
+
             <div class="ear right"></div>
+
 
             <div class="head">
 
+
                 <div class="eye left"></div>
+
                 <div class="eye right"></div>
+
 
                 <div class="snout">
 
@@ -1303,7 +1393,9 @@ p {
 
 
             <div class="arm left"></div>
+
             <div class="arm right"></div>
+
 
         </div>
 
@@ -1326,6 +1418,7 @@ p {
 
         </button>
 
+
     </div>
 
 </section>
@@ -1333,27 +1426,33 @@ p {
 
 
 <!-- =====================================================
-     SLIDE 2 — CHOCOLATE + SURPRISE
+     SLIDE 2
 ===================================================== -->
 
 <section class="slide slide2">
 
+
     <div class="content">
+
 
         <h1>
             Ye looo meri Jaan 🍫❤️
         </h1>
+
 
         <p>
             Teddy khud aapko chocolate de raha hai 🧸👉🍫
         </p>
 
 
-        <div style="
-            font-size:100px;
-            margin:20px;
-        ">
+        <div
+            style="
+                font-size:100px;
+                margin:20px;
+            ">
+
             🧸 💝 🧸
+
         </div>
 
 
@@ -1386,6 +1485,7 @@ p {
 
         </button>
 
+
     </div>
 
 </section>
@@ -1393,7 +1493,7 @@ p {
 
 
 <!-- =====================================================
-     SLIDE 3 — NIGHT ROOM + CUDDLE
+     SLIDE 3
 ===================================================== -->
 
 <section class="slide slide3">
@@ -1404,22 +1504,43 @@ p {
 
     <div class="window">
 
-        <div class="rain" style="left:20%;"></div>
 
         <div
             class="rain"
-            style="left:40%;animation-delay:.3s;">
+            style="left:20%;">
+
         </div>
+
 
         <div
             class="rain"
-            style="left:60%;animation-delay:.6s;">
+            style="
+                left:40%;
+                animation-delay:.3s;
+            ">
+
         </div>
+
 
         <div
             class="rain"
-            style="left:80%;animation-delay:.2s;">
+            style="
+                left:60%;
+                animation-delay:.6s;
+            ">
+
         </div>
+
+
+        <div
+            class="rain"
+            style="
+                left:80%;
+                animation-delay:.2s;
+            ">
+
+        </div>
+
 
     </div>
 
@@ -1428,23 +1549,31 @@ p {
 
 
     <div class="cold">
+
         ❄️ ❄️ ❄️
+
     </div>
 
 
     <div class="content">
 
+
         <h1 style="color:#b9a6ff;">
+
             AC full on haiii 🥶❄️
+
         </h1>
 
 
         <p style="color:#eee;">
-            Toh idhr aaiye meri jaan...
+
+            Toh idhr aao meri jaan...
+
         </p>
 
 
         <div class="bed">
+
 
             <div class="mattress"></div>
 
@@ -1460,20 +1589,26 @@ p {
 
                 <div class="cuddle-head one">
 
+
                     <div class="face-eye a"></div>
+
                     <div class="face-eye b"></div>
 
                     <div class="face-mouth"></div>
+
 
                 </div>
 
 
                 <div class="cuddle-head two">
 
+
                     <div class="face-eye a"></div>
+
                     <div class="face-eye b"></div>
 
                     <div class="face-mouth"></div>
+
 
                 </div>
 
@@ -1490,15 +1625,18 @@ p {
 
                 <div class="blanket"></div>
 
+
             </div>
+
 
         </div>
 
 
-        <p style="
-            color:#ffd3e4;
-            margin-top:20px;
-        ">
+        <p
+            style="
+                color:#ffd3e4;
+                margin-top:20px;
+            ">
 
             Blanket ke andar ek tight cuddle 🫂❤️
 
@@ -1509,9 +1647,10 @@ p {
             class="next-btn"
             onclick="nextSlide()">
 
-            Idhr aaiye 🥺👉👈
+            Idhr aao 🥺👉👈
 
         </button>
+
 
     </div>
 
@@ -1520,21 +1659,26 @@ p {
 
 
 <!-- =====================================================
-     SLIDE 4 — TIGHT HUG
+     SLIDE 4
 ===================================================== -->
 
 <section class="slide slide4">
+
 
     <div class="content">
 
 
         <div class="big-hug">
+
             🧸🫂🧸
+
         </div>
 
 
         <h1 class="hug-text">
+
             Bas aise hi rehna hai... 🥺❤️
+
         </h1>
 
 
@@ -1565,6 +1709,7 @@ p {
 
         </button>
 
+
     </div>
 
 </section>
@@ -1572,21 +1717,26 @@ p {
 
 
 <!-- =====================================================
-     SLIDE 5 — ROSE
+     SLIDE 5
 ===================================================== -->
 
 <section class="slide slide5">
+
 
     <div class="content">
 
 
         <div class="rose">
+
             🌹
+
         </div>
 
 
         <h1>
+
             For My Favourite Person ❤️
+
         </h1>
 
 
@@ -1613,6 +1763,7 @@ p {
 
         </button>
 
+
     </div>
 
 </section>
@@ -1620,10 +1771,11 @@ p {
 
 
 <!-- =====================================================
-     SLIDE 6 — FINAL APOLOGY
+     SLIDE 6
 ===================================================== -->
 
 <section class="slide slide6">
+
 
     <div class="content">
 
@@ -1632,12 +1784,16 @@ p {
 
 
             <div class="final-heart">
+
                 ❤️
+
             </div>
 
 
             <h1>
+
                 I'm Sorry Babyyyy 🥺❤️
+
             </h1>
 
 
@@ -1647,22 +1803,31 @@ p {
 
                 <br><br>
 
+
                 <b>
-                    Idhr aaiye...
+
+                    Idhr aao...
                     ek tight hugg duuu 🫂🥺
+
                 </b>
+
 
                 <br><br>
 
+
                 <b>
+
                     Mwauhhh 😘💋❤️
+
                 </b>
 
             </p>
 
 
             <h2>
+
                 Maaf kar diya? 🥺👉👈
+
             </h2>
 
 
@@ -1687,22 +1852,25 @@ p {
         </div>
 
 
-        <!-- FINAL YES SCREEN -->
+
+        <!-- YES SCREEN -->
 
         <div
             id="yesScreen"
             class="final-message">
 
 
-            <div style="
-                font-size:100px;
-            ">
+            <div style="font-size:100px;">
+
                 🧸🫂🧸
+
             </div>
 
 
             <h1>
+
                 YAYYYYY 😭❤️
+
             </h1>
 
 
@@ -1721,15 +1889,15 @@ p {
             </p>
 
 
-            <div style="
-                font-size:50px;
-            ">
+            <div style="font-size:50px;">
 
                 🌹🍫❤️🧸💕
 
             </div>
 
+
         </div>
+
 
     </div>
 
@@ -1738,6 +1906,7 @@ p {
 
 
 <script>
+
 
 /* =====================================================
    SLIDE SYSTEM
@@ -1751,6 +1920,7 @@ const slides =
 
 function nextSlide() {
 
+
     slides[currentSlide]
         .classList.remove("active");
 
@@ -1758,7 +1928,10 @@ function nextSlide() {
     currentSlide++;
 
 
-    if (currentSlide >= slides.length) {
+    if (
+        currentSlide >=
+        slides.length
+    ) {
 
         currentSlide =
             slides.length - 1;
@@ -1794,6 +1967,7 @@ const heartTypes = [
 
 function createHeart() {
 
+
     const heart =
         document.createElement("div");
 
@@ -1812,15 +1986,27 @@ function createHeart() {
 
 
     heart.style.left =
-        Math.random() * 100 + "vw";
+        Math.random() *
+        100 +
+        "vw";
 
 
     heart.style.fontSize =
-        (15 + Math.random() * 25) + "px";
+        (
+            15 +
+            Math.random() *
+            25
+        ) +
+        "px";
 
 
     heart.style.animationDuration =
-        (5 + Math.random() * 5) + "s";
+        (
+            5 +
+            Math.random() *
+            5
+        ) +
+        "s";
 
 
     document.body.appendChild(
@@ -1837,8 +2023,6 @@ function createHeart() {
 }
 
 
-/* Continuous hearts */
-
 setInterval(
     createHeart,
     700
@@ -1851,11 +2035,13 @@ setInterval(
 
 function createBurst() {
 
+
     for (
         let i = 0;
         i < 18;
         i++
     ) {
+
 
         const heart =
             document.createElement("div");
@@ -1911,10 +2097,12 @@ function createBurst() {
             [
 
                 {
+
                     transform:
                         "translate(-50%, -50%) scale(0.3)",
 
                     opacity: 1
+
                 },
 
                 {
@@ -1935,7 +2123,8 @@ function createBurst() {
 
                 duration:
                     1000 +
-                    Math.random() * 700,
+                    Math.random() *
+                    700,
 
                 easing:
                     "ease-out"
@@ -1962,19 +2151,22 @@ function createBurst() {
 
 
 /* =====================================================
-   YES BUTTON
+   YES / FORGIVE
 ===================================================== */
 
 function forgive() {
 
+
     document.getElementById(
         "normalFinal"
-    ).style.display = "none";
+    ).style.display =
+        "none";
 
 
     document.getElementById(
         "yesScreen"
-    ).style.display = "block";
+    ).style.display =
+        "block";
 
 
     for (
@@ -2002,12 +2194,13 @@ function forgive() {
 
 function thinking() {
 
+
     const button =
         event.target;
 
 
     button.innerHTML =
-        "Please maaf kar dijiye na 🥺❤️";
+        "Please maaf kar do na 🥺❤️";
 
 
     button.style.transform =
@@ -2016,8 +2209,10 @@ function thinking() {
 
     setTimeout(() => {
 
+
         button.innerHTML =
             "Ek tight hug ke baad sochna 🫂🥺";
+
 
     }, 1200);
 
